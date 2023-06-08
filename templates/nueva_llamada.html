@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nueva Llamada</title>
+</head>
+<body>
+    <h1>Nueva Llamada</h1>
+    <form action="/nueva_llamada" method="POST">
+        <label for="cliente">Cliente:</label>
+        <select name="cliente" id="cliente">
+            <option value="G001">G001</option>
+            <option value="G002">G002</option>
+            <option value="G003">G003</option>
+            <!-- Agrega las opciones restantes hasta G015 -->
+        </select>
+
+        <br><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" name="telefono" id="telefono">
+
+        <br><br>
+
+        <label for="usuario">Usuario:</label>
+        <input type="text" name="usuario" id="usuario">
+
+        <br><br>
+
+        <input type="submit" value="Iniciar Llamada">
+    </form>
+</body>
+</html>

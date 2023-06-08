@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Control de Llamadas</title>
+</head>
+<body>
+    <h1>Registros de Llamadas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Usuario</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for llamada in llamadas %}
+            <tr>
+                <td>{{ llamada['cliente'] }}</td>
+                <td>{{ llamada['nombre'] }}</td>
+                <td>{{ llamada['telefono'] }}</td>
+                <td>{{ llamada['usuario'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/nueva_llamada">Crear nuevo registro</a>
+</body>
+</html>
